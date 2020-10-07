@@ -1,5 +1,6 @@
 #Creating a virtual coffee machine, with prices
 #Define a dictionary of ingredients per beverage
+import time
 CoffeeIngredients = {"Americano":"70% Ground Coffee Beans, 30% Water","Cafe Latte":"40% Ground Coffee Beans, 20% Water, 40% Hot Milk","Cappuccino":"35% Espresso, 35% Hot Milk, 30% Milk Foam","Hot Cocoa":"60% Cocoa Powder, 40% Hot Milk","Hot Water":"100% Hot Water"}
 #Define a separate dictionary of prices per beverage
 CoffeePrices = {"Americano":"21kr","Cafe Latte":"24kr","Cappuccino":"26kr","Hot Cocoa":"15kr","Hot Water":"5kr"}
@@ -19,10 +20,8 @@ if ((drink == "Americano") or (drink == "Cafe Latte") or (drink == "Cappuccino")
     print("Please, hold on while the drink is being made.")
     print("...\t...\t...")
     #Delay the following commands by 5 seconds, to simulate waiting for the drink
-    import time
     time.sleep(5)   #Delays for 5 seconds.
     print("Your order is finished!")
-    import time
     time.sleep(2) #Delay one second, for visibility.
     print("Be careful, it is hot.")
     print("Please, enjoy.")
